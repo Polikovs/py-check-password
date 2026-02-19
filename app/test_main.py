@@ -11,6 +11,7 @@ from app.main import check_password
         ("Pass@word1", True),
         ("S234$67", False),
         ("S234$6789asdfgh11", False),
+        ("pass@word1", False),
     ]
 )
 def test_check_password(password: str, expected_result: bool) -> None:
